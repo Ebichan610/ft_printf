@@ -1,36 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ebichan <ebichan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 08:30:00 by ebichan           #+#    #+#             */
-/*   Updated: 2025/02/15 16:09:30 by ebichan          ###   ########.fr       */
+/*   Updated: 2025/02/18 21:41:31 by ebichan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "utils.h"
 
-int	ft_putstr_fd(char *s, int fd)
+int	ft_putstr(char *s)
 {
 	int count;
-	int tmp_byte;
 	count = 0;
-	tmp_byte = 0;
+	if (s == NULL)
+    {
+        write(1, "(null)", 6);
+        return 6;
+    }
 	while (*s)
 	{
-		tmp_byte = write(fd, s, 1);
-		if(tmp_byte == -1)
-		{
-			if(count == 0)
-				return(-1);
-			return(count);
-		}
-		count++;
+		count += ft_putchar(*s);
 		s++;
+		
 	}
-	return (count);
+	return(count);
 }
 
 // int main()

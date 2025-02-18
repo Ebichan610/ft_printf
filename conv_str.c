@@ -6,18 +6,15 @@
 /*   By: ebichan <ebichan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/15 16:21:53 by ebichan           #+#    #+#             */
-/*   Updated: 2025/02/18 17:23:19 by ebichan          ###   ########.fr       */
+/*   Updated: 2025/02/18 21:36:30 by ebichan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int conv_str(va_list ap)
+int conv_str(char *str)
 {
-    char *dst;
     int count;
-
-    dst = va_arg(ap,char *);
-    count =ft_putstr_fd(dst,1);
+    count =ft_putstr(str);
     return (count);
 }

@@ -1,30 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yebi <yebi@student.42tokyo.jp>             +#+  +:+       +#+        */
+/*   By: ebichan <ebichan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 13:08:23 by yebi              #+#    #+#             */
-/*   Updated: 2024/11/30 23:10:30 by yebi             ###   ########.fr       */
+/*   Created: 2024/11/27 07:36:49 by ebichan           #+#    #+#             */
+/*   Updated: 2025/02/18 21:42:25 by ebichan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "utils.h"
 
-int	ft_toupper(int c)
+int	ft_putchar(char c)
 {
-	if (c >= 97 && c <= 122)
-		c -= 32;
-	return (c);
+	int count;
+	count = 0;
+	count = write(1, &c, 1);
+	if(count == -1)
+		return (-1);
+	return (count);
 }
-
-// int	main(void)
-// {
-// 	int	c;
-
-// 	c = '-';
-// 	printf("%c\n", toupper(c));
-// 	printf("%c\n", ft_toupper(c));
-// 	return (0);
-// }

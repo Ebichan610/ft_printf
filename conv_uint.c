@@ -1,30 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   conv_uint.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yebi <yebi@student.42tokyo.jp>             +#+  +:+       +#+        */
+/*   By: ebichan <ebichan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/27 18:19:22 by ebichan           #+#    #+#             */
-/*   Updated: 2024/11/30 23:10:38 by yebi             ###   ########.fr       */
+/*   Created: 2025/02/15 16:45:32 by ebichan           #+#    #+#             */
+/*   Updated: 2025/02/18 21:39:00 by ebichan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+int conv_uint(unsigned int num)
 {
-	unsigned int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		f(i, &s[i]);
-		i++;
-	}
+    int count;
+    count = ft_putuintnbr(num);
+    return (count);
 }
-
-// int main(void)
-// {
-
-// }

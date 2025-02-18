@@ -6,7 +6,7 @@
 /*   By: ebichan <ebichan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/15 16:33:02 by ebichan           #+#    #+#             */
-/*   Updated: 2025/02/15 16:59:41 by ebichan          ###   ########.fr       */
+/*   Updated: 2025/02/18 21:35:59 by ebichan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int conv_percent()
 {
     int count;
-    count = ft_putchar_fd('%',1);
+    count = ft_putchar('%');
     return (count);
 }

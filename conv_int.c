@@ -1,30 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   conv_int.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yebi <yebi@student.42tokyo.jp>             +#+  +:+       +#+        */
+/*   By: ebichan <ebichan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 13:12:24 by yebi              #+#    #+#             */
-/*   Updated: 2024/11/30 23:10:29 by yebi             ###   ########.fr       */
+/*   Created: 2025/02/15 16:46:00 by ebichan           #+#    #+#             */
+/*   Updated: 2025/02/18 21:39:01 by ebichan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-int	ft_tolower(int c)
+int conv_int(int num)
 {
-	if (c >= 65 && c <= 90)
-		c += 32;
-	return (c);
+    int count;
+    count = ft_putnbr(num);
+    return (count);
 }
-
-// int	main(void)
-// {
-// 	int	c;
-
-// 	c = ']';
-// 	printf("%c\n", tolower(c));
-// 	printf("%c\n", ft_tolower(c));
-// 	return (0);
-// }

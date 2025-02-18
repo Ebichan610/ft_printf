@@ -3,10 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: yebi <yebi@student.42tokyo.jp>             +#+  +:+       +#+         #
+#    By: ebichan <ebichan@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/06 00:59:33 by yebi              #+#    #+#              #
-#    Updated: 2024/12/06 00:59:34 by yebi             ###   ########.fr        #
+#    Updated: 2025/02/13 17:53:04 by ebichan          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+CC = cc
+FLAGS = -Wall -Wextra -Werror
+
+NAME = libftprintf.a
+
+SRCS = 

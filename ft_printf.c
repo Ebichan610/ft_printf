@@ -6,7 +6,7 @@
 /*   By: ebichan <ebichan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 01:00:30 by yebi              #+#    #+#             */
-/*   Updated: 2025/02/18 16:13:14 by ebichan          ###   ########.fr       */
+/*   Updated: 2025/02/18 16:19:59 by ebichan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,10 +43,10 @@ int ft_printf(const char *format, ...)
     return (count);
 }
 
-// int main()
-// {
-//     char const* format= "";
-//     ft_printf(format,);
-//     printf(format,);
-//     return (0);
-// }
+int main()
+{
+    char const* format= "aa\n";
+    ft_printf(format);
+    printf(format);
+    return (0);
+}

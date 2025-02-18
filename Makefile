@@ -6,7 +6,7 @@
 #    By: ebichan <ebichan@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/06 00:59:33 by yebi              #+#    #+#              #
-#    Updated: 2025/02/18 17:29:19 by ebichan          ###   ########.fr        #
+#    Updated: 2025/02/18 17:32:42 by ebichan          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,49 +25,49 @@ SRCS =	ft_printf.c \
 		conv_str.c \
 		conv_unsdecint.c \
 		ft_puthexnbr.c \
-		utils/ft_atoi.c \
-		utils/ft_bzero.c \
-		utils/ft_calloc.c \
-		utils/ft_isalnum.c \
-		utils/ft_isalpha.c \
-		utils/ft_isascii.c \
-		utils/ft_isdigit.c \
-		utils/ft_isprint.c \
-		utils/ft_itoa.c \
-		utils/ft_lstadd_back.c \
-		utils/ft_lstadd_front.c \
-		utils/ft_lstclear.c \
-		utils/ft_lstdelone.c \
-		utils/ft_lstiter.c \
-		utils/ft_lstlast.c \
-		utils/ft_lstmap.c \
-		utils/ft_lstnew.c \
-		utils/ft_lstsize.c \
-		utils/ft_memchr.c \
-		utils/ft_memcmp.c \
-		utils/ft_memcpy.c \
-		utils/ft_memmove.c \
-		utils/ft_memset.c \
-		utils/ft_putchar_fd.c \
-		utils/ft_putendl_fd.c \
-		utils/ft_putnbr_fd.c \
-		utils/ft_putstr_fd.c \
-		utils/ft_split.c \
-		utils/ft_strchr.c \
-		utils/ft_strdup.c \
-		utils/ft_striteri.c \
-		utils/ft_strjoin.c \
-		utils/ft_strlcat.c \
-		utils/ft_strlcpy.c \
-		utils/ft_strlen.c \
-		utils/ft_strmapi.c \
-		utils/ft_strncmp.c \
-		utils/ft_strnstr.c \
-		utils/ft_strrchr.c \
-		utils/ft_strtrim.c \
-		utils/ft_substr.c \
-		utils/ft_tolower.c \
-		utils/ft_toupper.c
+		libft/ft_atoi.c \
+		libft/ft_bzero.c \
+		libft/ft_calloc.c \
+		libft/ft_isalnum.c \
+		libft/ft_isalpha.c \
+		libft/ft_isascii.c \
+		libft/ft_isdigit.c \
+		libft/ft_isprint.c \
+		libft/ft_itoa.c \
+		libft/ft_lstadd_back.c \
+		libft/ft_lstadd_front.c \
+		libft/ft_lstclear.c \
+		libft/ft_lstdelone.c \
+		libft/ft_lstiter.c \
+		libft/ft_lstlast.c \
+		libft/ft_lstmap.c \
+		libft/ft_lstnew.c \
+		libft/ft_lstsize.c \
+		libft/ft_memchr.c \
+		libft/ft_memcmp.c \
+		libft/ft_memcpy.c \
+		libft/ft_memmove.c \
+		libft/ft_memset.c \
+		libft/ft_putchar_fd.c \
+		libft/ft_putendl_fd.c \
+		libft/ft_putnbr_fd.c \
+		libft/ft_putstr_fd.c \
+		libft/ft_split.c \
+		libft/ft_strchr.c \
+		libft/ft_strdup.c \
+		libft/ft_striteri.c \
+		libft/ft_strjoin.c \
+		libft/ft_strlcat.c \
+		libft/ft_strlcpy.c \
+		libft/ft_strlen.c \
+		libft/ft_strmapi.c \
+		libft/ft_strncmp.c \
+		libft/ft_strnstr.c \
+		libft/ft_strrchr.c \
+		libft/ft_strtrim.c \
+		libft/ft_substr.c \
+		libft/ft_tolower.c \
+		libft/ft_toupper.c
 
 OBJS = $(SRCS:.c=.o)
 

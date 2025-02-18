@@ -6,7 +6,7 @@
 /*   By: ebichan <ebichan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/13 17:58:34 by ebichan           #+#    #+#             */
-/*   Updated: 2025/02/18 17:19:19 by ebichan          ###   ########.fr       */
+/*   Updated: 2025/02/18 17:32:57 by ebichan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <stdint.h>
-#include "utils/libft.h"
+#include "libft/libft.h"
 
 int ft_printf(char const *format, ...);
 int check_specifier(va_list ap, char const *format);

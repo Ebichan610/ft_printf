@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebichan <ebichan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: yebi <yebi@student.42tokyo.jp>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 07:36:49 by ebichan           #+#    #+#             */
-/*   Updated: 2025/02/18 21:42:25 by ebichan          ###   ########.fr       */
+/*   Updated: 2025/02/19 08:26:13 by yebi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,11 @@
 
 int	ft_putchar(char c)
 {
-	int count;
+	int	count;
+
 	count = 0;
 	count = write(1, &c, 1);
-	if(count == -1)
+	if (count == -1)
 		return (-1);
 	return (count);
 }

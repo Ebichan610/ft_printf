@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebichan <ebichan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: yebi <yebi@student.42tokyo.jp>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 08:44:51 by ebichan           #+#    #+#             */
-/*   Updated: 2025/02/18 22:09:17 by ebichan          ###   ########.fr       */
+/*   Updated: 2025/02/19 08:26:21 by yebi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_putnbr(int n)
 {
 	char	c;
-	int count;
+	int		count;
 
 	count = 0;
 	if (n == INT_MIN)

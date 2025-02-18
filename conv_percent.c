@@ -3,18 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   conv_percent.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebichan <ebichan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: yebi <yebi@student.42tokyo.jp>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/15 16:33:02 by ebichan           #+#    #+#             */
-/*   Updated: 2025/02/18 21:35:59 by ebichan          ###   ########.fr       */
+/*   Updated: 2025/02/19 08:26:37 by yebi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int conv_percent()
+int	conv_percent(void)
 {
-    int count;
-    count = ft_putchar('%');
-    return (count);
+	int	count;
+
+	count = ft_putchar('%');
+	return (count);
 }

@@ -6,7 +6,7 @@
 /*   By: ebichan <ebichan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/15 16:32:22 by ebichan           #+#    #+#             */
-/*   Updated: 2025/02/18 16:08:34 by ebichan          ###   ########.fr       */
+/*   Updated: 2025/02/18 16:26:28 by ebichan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int conv_pointer(va_list ap)
     ptr = va_arg(ap, void*);
     if(ptr == NULL)
     {
-        count = write(1,"0x0",3);
+        count = write(1,"(nil)",5);
         return(count);
     }
     count = write(1,"0x",2);

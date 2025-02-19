@@ -6,7 +6,7 @@
 /*   By: yebi <yebi@student.42tokyo.jp>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 08:44:51 by ebichan           #+#    #+#             */
-/*   Updated: 2025/02/19 08:26:21 by yebi             ###   ########.fr       */
+/*   Updated: 2025/02/19 14:59:49 by yebi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 int	ft_putnbr(int n)
 {
 	char	c;
-	int		count;
+	ssize_t	count;
 
 	count = 0;
 	if (n == INT_MIN)
 	{
 		count = write(1, "-2147483648", 11);
-		return (count);
+		return ((int)count);
 	}
 	if (n < 0)
 	{
@@ -32,7 +32,7 @@ int	ft_putnbr(int n)
 		count += ft_putnbr(n / 10);
 	c = (n % 10) + '0';
 	count += write(1, &c, 1);
-	return (count);
+	return ((int)count);
 }
 
 // int main()

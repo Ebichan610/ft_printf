@@ -6,7 +6,7 @@
 /*   By: yebi <yebi@student.42tokyo.jp>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/15 12:12:18 by ebichan           #+#    #+#             */
-/*   Updated: 2025/02/19 08:26:30 by yebi             ###   ########.fr       */
+/*   Updated: 2025/02/19 15:07:20 by yebi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,9 @@ int	check_specifier(va_list ap, char const *format)
 	else if (*format == '%')
 		count = conv_percent();
 	else
-		return (-1);
+	{
+		count += ft_putchar('%');
+		count += ft_putchar(*format);
+	}
 	return (count);
 }

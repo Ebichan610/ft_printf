@@ -6,7 +6,7 @@
 /*   By: yebi <yebi@student.42tokyo.jp>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 01:00:30 by yebi              #+#    #+#             */
-/*   Updated: 2025/02/19 08:26:43 by yebi             ###   ########.fr       */
+/*   Updated: 2025/02/19 15:13:23 by yebi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,11 @@ int	ft_printf(const char *format, ...)
 
 // #include <stdio.h>
 
-// int main()
+// int	main(void)
 // {
-//     ft_printf("aa\n");
-//     printf("aa\n");
-//     return (0);
+// 	printf("%d\n", ft_printf("%c\n%s\n%p\n%d\n%i\n%u\n%x\n%X\n%%\n", 'a',
+// 			"abcde", "abcde", 123, -123, -23, -23, -23));
+// 	printf("%d\n", printf("%c\n%s\n%p\n%d\n%i\n%u\n%x\n%X\n%%\n", 'a', "abcde",
+// 			"abcde", 123, -123, -23, -23, -23));
+// 	return (0);
 // }

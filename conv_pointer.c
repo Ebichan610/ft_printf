@@ -6,7 +6,7 @@
 /*   By: yebi <yebi@student.42tokyo.jp>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/15 16:32:22 by ebichan           #+#    #+#             */
-/*   Updated: 2025/02/19 08:26:39 by yebi             ###   ########.fr       */
+/*   Updated: 2025/02/19 09:30:57 by yebi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ int	conv_pointer(void *ptr)
 		return (count);
 	}
 	count = write(1, "0x", 2);
-	count += ft_puthexnbr_in_low((uintptr_t)ptr);
+	count += ft_puthexnbr_for_ptr((uintptr_t)ptr);
 	return (count);
 }

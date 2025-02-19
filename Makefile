@@ -6,7 +6,7 @@
 #    By: yebi <yebi@student.42tokyo.jp>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/06 00:59:33 by yebi              #+#    #+#              #
-#    Updated: 2025/02/19 08:26:48 by yebi             ###   ########.fr        #
+#    Updated: 2025/02/19 09:16:58 by yebi             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,12 +31,12 @@ SRCS =	ft_printf.c \
 		utils/ft_putuintnbr.c
 		
 
-OBJS = $(SRCS:.c=.o)
+OBJS = $(SRCS:%.c=%.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar rc $(NAME) $^
+	ar rcs $(NAME) $^
 
 %.o: %.c
 	$(CC) $(FLAGS) -c $< -o $@
@@ -50,4 +50,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
-

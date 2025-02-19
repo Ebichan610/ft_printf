@@ -6,33 +6,53 @@
 /*   By: yebi <yebi@student.42tokyo.jp>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 08:44:51 by ebichan           #+#    #+#             */
-/*   Updated: 2025/02/19 14:59:49 by yebi             ###   ########.fr       */
+/*   Updated: 2025/02/19 19:26:20 by yebi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "utils.h"
 
+static int	ft_putnbr_recursive(unsigned int n)
+{
+	int	count;
+	int	tmp;
+
+	count = 0;
+	if (n >= 10)
+	{
+		tmp = ft_putnbr_recursive(n / 10);
+		if (tmp == -1)
+			return (-1);
+		count += tmp;
+	}
+	tmp = ft_putchar((n % 10) + '0');
+	if (tmp == -1)
+		return (-1);
+	count += tmp;
+	return (count);
+}
+
 int	ft_putnbr(int n)
 {
-	char	c;
-	ssize_t	count;
+	int	count;
+	int	tmp;
 
 	count = 0;
 	if (n == INT_MIN)
-	{
-		count = write(1, "-2147483648", 11);
-		return ((int)count);
-	}
+		return (write(1, "-2147483648", 11));
 	if (n < 0)
 	{
-		count += write(1, "-", 1);
-		n *= -1;
+		tmp = ft_putchar('-');
+		if (tmp == -1)
+			return (-1);
+		count += tmp;
+		n = -n;
 	}
-	if (n >= 10)
-		count += ft_putnbr(n / 10);
-	c = (n % 10) + '0';
-	count += write(1, &c, 1);
-	return ((int)count);
+	tmp = ft_putnbr_recursive((unsigned int)n);
+	if (tmp == -1)
+		return (-1);
+	count += tmp;
+	return (count);
 }
 
 // int main()
